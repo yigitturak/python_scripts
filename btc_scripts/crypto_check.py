@@ -14,7 +14,7 @@ def get_crytry(token):
     print(token + ":", json_btcturk.get("data")[0].get("last"))
     return json_btcturk.get("data")[0].get("last")
 
-apikey="c393593a8b27bbdaffb4907e19e085e5"
+apikey="xxx"
 url_exchange="http://api.currencylayer.com/live?access_key=" + apikey + "&currencies=EUR,TRY&format=1"
 request_exchange = requests.get(url_exchange)
 json_exchange = request_exchange.json()
