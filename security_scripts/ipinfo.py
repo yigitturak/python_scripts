@@ -3,7 +3,7 @@ import requests
 from requests.models import Response
 
 def get_response_json(ip_adr):
-    token = "0ef00db43a43dd"
+    token = "xxx"
     url = "https://ipinfo.io/" + ip_adr + "?token="+token
     req = requests.get(url)
     return req.json()
@@ -29,7 +29,7 @@ def get_result_multiple_IP():
         print(result)
 
 def get_info_threatgrid(ip_adr):
-    api_key="a4eo1p4d7g5jlqn33ts0mapr8i"
+    api_key="xxx"
     url="https://panacea.threatgrid.com/api/v2/ips/" + ip_adr + "?api_key="+ api_key
     req = requests.get(url)
     print(req.json())
